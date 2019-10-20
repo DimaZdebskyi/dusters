@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Starwars';
+  src: url(fonts/SFDistantGalaxy.ttf);
+ }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/background.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+
+}
+.header {
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Starwars', sans-serif ;
+}
+.card {
+  color: white;
+  width: 22%;
+  background-color: rgba(70, 70, 70, 0.74);
+  border-radius: 10px;
+  font-family: monospace;
+  padding: 10px;
+  margin: 20px 10px 10px 10px;
+  cursor: pointer;
+}
+.card:hover {
+  border: 2px solid white;
+}
+
+.planet {
+  width: 60%;
+  margin-left: 20%;
+}
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.description {
+  margin-top: 6px;
+  text-align: justify;
+}
+#mainElem, #starElem, #setR, #result {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+h2 {
+  width: 100%;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-shadow: yellow 1px 1px 0, yellow -1px -1px 0, 
+  yellow -1px 1px 0, yellow 1px -1px 0;
+  font-family: 'Starwars', sans-serif;
+}
+
+#starElem, #setR, #result{
+  display: none;
+}
+
+#dist {
+  margin-top: 10%;
+  border: 2px solid rgba(255, 255, 0, 0.5);
+  font-size: 20px;
+  padding: 5px 10px;
+  color: rgba(255, 255, 0, 0.5);
+  border-radius: 2px;
+  background: transparent;
+  transition: all 0.1s;
+  width: 60%;
+}
+#dist:focus {
+  outline: none;
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 0, 0.75);
+}
+
+#checkDistance {
+  border: 2px solid rgba(255, 255, 0, 0.75);
+  font-size: 20px;
+  padding:5px 10px;
+  color: rgba(255, 255, 0, 0.75);
+  border-radius: 2px;
+  background: transparent;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.setDistance {
+  text-align: center;
+  width: 44%;
+  margin: 30px;
+  background: rgba(34, 34, 34, 0.562);
+  border-radius: 20px;
+}
+
+.resultDescription {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: justify;
+  background: rgba(34, 34, 34, 0.562);
+  border-radius: 20px;
+  padding: 20px;
+}
+.resultDescription > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0 30px 0;
+
+}
+.mark {
+  color: yellow;
+}
+#result > h2 {
+  margin: 20px 0;
+}
+
+.resultDescription > img {
+  margin: 20px 30% 0 30%;
+  width: 40%;
+}
+.howTo {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  margin: 10px 0;
+}
